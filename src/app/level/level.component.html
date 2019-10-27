@@ -1,0 +1,6 @@
+<div  class="button-group">
+<button *ngFor="let level of Levels" value = "level" (click)=onSelect(level) [ngClass]="level === selectedLevel ? 'red button' : 'blue button'" >{{level}}</button>
+</div>
+<app-level-container [level]="selectedLevel" [hero]="hero"></app-level-container>
+
+

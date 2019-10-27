@@ -1,0 +1,6 @@
+Real Flag: KRXZY_CTF{The_Gr34te5t_Detective_Jg8pkLgjKU}
+
+Test Flag: KRXZY_CTF{This_1s_NOT_Th3_Flag}
+
+Procedure: Flag -> reversed -> BCD -> Hexadecimal
+

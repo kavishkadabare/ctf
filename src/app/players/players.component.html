@@ -1,0 +1,23 @@
+<div [hidden]="isShow">
+<ul class = "heroes">
+  <li *ngFor= " let hero of heroes" (click)="onSelectX(hero)" [class.selected]="hero === selectedHero">
+    <span class = "badge">{{hero.id}}</span>  {{hero.name}}
+
+  </li>
+
+</ul>
+<div style="background-color: whitesmoke; border-radius: 20px; margin: 20px; padding: 20px">
+  <h2>Instructions</h2>
+  <ul>
+    <li><p>All levels are incremental. Therefore, the previous level must be
+        completed, and the proper flag must be submitted to get to the next level</p></li>
+    <li><p>Please keep all flags found in a text file. This is a one page app, and accidental refreshing would reset the whole game, including the passed levels</p></li>
+    <li><p>Note That some flags are hidden in a format such as <input type="text" value="KRXZY_CTF{'flag'}">. You must only submit the 'flag' section. The format is to make it easier to find the flag</p></li>
+  </ul>
+</div>
+</div>
+<!-- <app-level-container [hero]="selectedHero"></app-level-container> -->
+<div *ngIf="selectedHero">
+<app-level [hero]="selectedHero"></app-level>
+ </div>
+

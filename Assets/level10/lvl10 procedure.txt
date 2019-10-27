@@ -1,0 +1,22 @@
+..........Hide flag inside the audio......
+
+
+****Encrypt******
+Open Deep sound
+Carrier files > select audio > Add secret flag > encode secret file > Encrypt file >password(KRXZY) >Encode
+
+****Decrypt****
+Open carrier files > select encrypted audio >Enter password >Extract file
+
+
+************Hide Audio inside the image**************
+
+select encrypted audio and add to .rar file
+select image
+comand prompt > copy /b bat.jpeg + CTFimage.rar hiddeimage.jpeg
+
+******Decrypt********
+rename hiddeimage.jpeg hideimage1.rar
+extract
+
+

@@ -1,0 +1,41 @@
+/* TEAM */
+	
+	Member 1: Kavishka Dabare
+	Contact: kavishka@krxzy_ctf.com
+	From: Colombo, Sri Lanka
+	Likes: DC, Marvel, Anime, TV series
+
+	Member 2: Kalpani Senanayake
+	Contact: kalpani@krxzy_ctf.com
+	From: Kuliyapitiya, Sri Lanka
+	Likes: 
+
+	Member 3: Bilal Sariffodeen
+	Contact: bilal@krxzy_ctf.com
+	From: Bandarawela, Sri Lanka
+	Likes: 
+
+	admin 0: Barbara Gordon
+	Contact: barbara@krxzy_ctf.com
+	From: GCPD, Gotham city 
+	Likes: Hiding in plain sight, Deep Sound
+	
+
+/* THANKS */
+
+	Hero Influence: Bruce Wayne
+	Contact: bruce.wayne@dc.com
+	From: Wayne Manor, Gotham city
+	Likes: Unknown
+
+	Villian Influence: The Joker
+	Contact: the.joker@dc.com
+	From: Arkham Asylum, Gotham City
+	Likes: Toying with Batman
+
+		
+
+/* SITE */
+	Last update:2018/11/05
+	Language: English
+	IDE: VS Code

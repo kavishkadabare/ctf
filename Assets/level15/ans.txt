@@ -1,0 +1,1 @@
+Run AcidFlower -> Reverse engineer the code(2147483647,2147483646) -> Use as password -> get barcode -> Strg Barcode -> Flag

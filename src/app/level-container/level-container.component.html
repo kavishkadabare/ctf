@@ -1,0 +1,461 @@
+<!-- <div *ngIf="hero">
+
+    <h2>{{hero.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{hero.id}}</div>
+    <div>
+      <label>name:
+        <input [(ngModel)]="hero.name" placeholder="name"/>
+      </label>
+    </div>
+  
+  </div>
+ -->
+
+<div *ngIf="level">
+<!-- Story -->
+  <button type="button" class="collapsible" (click)='collapse()'>Story</button>
+  <div [hidden]="isShow" class="content" id="content">
+
+      <div *ngIf="level===1">
+          <div class="text-block">      
+              <div class="row">
+               <div class="column">
+                 <img src="../assets/img/story/Level 01.jpg" alt="Snow" style="width:80%">
+               </div>          
+               </div>
+               <div class= "container"align="bottom">
+                    
+                <p>The Riddler, with his straight headed academic hostages put to stake, welcomes the Batman to solve his tricky riddle.</p>     
+                    
+                   </div>
+                </div>
+      </div>
+
+      <div *ngIf="level===2">
+          <div class="text-block">
+    
+              <p>After a successful attempt, a satisfied Riddler releases all hostages but one: <br/>looking forward to a display of wit from the Batman to save the day (or night)</p>
+                     
+               <div class="row">
+                <div class="column">
+                  <img src="../assets/img/story/Level 02.jpg" alt="Snow" style="width:50%">
+                </div>
+                
+                
+                </div>
+                <div class="container" align="bottom">
+                     
+                 <p>After a strenuous attempt to save one last life the Batman solves the Riddle to fight another day and <br/>the Riddler hums a song as he hands himself over to the Riddled GCPD officers.
+              
+              </p>     
+                     
+                    </div>
+                 </div>
+    
+      </div>
+
+      <div *ngIf="level===3">
+
+          <div class="text-block">
+              <p></p>
+                     
+               <div class="row">
+                <div class="column">
+                  <img src="../assets/img/story/Level 03.jpg" alt="Snow" style="width:60%">
+                </div>
+                
+                
+                </div>
+                <div class= "container"align="bottom">
+                     
+                 <p>Knowing how reckless and full of raw energy Clayface can be, Batman tries to enable an Automated Defense System at the bank. But a challenge lies ahead</p>
+                  
+                     
+                    </div>
+                 </div>
+      </div>
+
+      <div *ngIf="level===4">
+
+          <div class="text-block">
+              <p>With a Defensive Perimeter temporarily holding back Clayface, Batman tries to lock down the underground vaults.<br/> To do so he has to obtain the passcode which is securely encrypted</p>
+                     
+               <div class="row">
+                <div class="column">
+                  <img src="../assets/img/story/Level 04.jpg" alt="Snow" style="width:60%">
+                </div>
+                
+                
+                </div>
+                <div class= "container"align="bottom">
+                     
+                 <p>With the bank secured for now, Batman manages to fend of Clayface with some GCPD Firepower helping the cause. <br/>The villain escapes yet the bank remains safe and secure.</p>
+                  
+                     
+                    </div>
+                 </div>
+                
+      </div>
+
+      <div *ngIf="level===5">
+
+          <div class="text-block">
+              <p> On sighting unrest around the Gotham Magistrate, Batman observes Harvey Dent (aka two-face) <br/> displaying a constrained Commissioner Gordon with a timed device strapped to his waist</p>
+              
+              
+                      
+               <div class="row">
+                <div class="column">
+                  <img src="../assets/img/story/Level 05-Img 01.jpg" alt="Snow" style="width:56%">
+                </div>
+                
+                <div class="column">
+                  <img src="../assets/img/story/Level 05-Img 02.jpg" alt="Forest" style="width:49%">
+                </div>
+                </div>
+                <div class= "container"align="bottom">
+                     
+                 <p>An agitated two-face kept challenging onlookers to take the device off:<br/>joyously warning them that one wrong step would blow them all to smithereens! <br/>Being the hero he is, Batman steps up.</p>     
+                     
+                    </div>
+                 </div>
+      </div>
+      <div *ngIf="level===6">
+    
+          <div class="text-block">
+              <p>After Batman defuses the device, Two Face smiles wickedly and tosses a coin<br/>as it lands whispers to the hero’s ear as automated turrets starts firing at everyone around. </p>
+              
+              
+                      
+               <div class="row">
+                <div class="column">
+                  <img src="../assets/img/story/Level 06-Img 01.jpg" alt="Snow" style="width:60%">
+                </div>
+                
+                <div class="column">
+                  <img src="../assets/img/story/Level 06-Img 02.jpg" alt="Forest" style="width:70%">
+                </div>
+                </div>
+                <div class= "container"align="bottom">
+                     
+                 <p>Batman finds the central controller and tries to disarm the system, but nothing is ever as easy as it sounds</p>     
+                     
+                    </div>
+                 </div>
+      </div>
+
+      <div *ngIf="level===7">
+
+    
+          <div class="text-block">
+              <p>Batman manages to save Commissioner Gordon and a few dozen people,<br/>but soon gets notified of a situation at a Wayne Industries warehouse;<br/>containing advanced weaponized technology...</p>
+              
+              
+                      
+               <div class="row">
+                <div class="column">
+                  <img src="../assets/img/story/Level 07-Img 01.jpg" alt="Snow" style="width:65%">
+                </div>
+                
+                <div class="column">
+                  <img src="../assets/img/story/Level 07-Img 02.jpg" alt="Forest" style="width:70%">
+                </div>
+                </div>
+                <div class= "container"align="bottom">
+                     
+                 <p> Dr Freeze has tied up the guards and locked himself in the warehouse.<br/>Having designed the system himself, batman knows the only way to break the lock is to reverse engineer it</p>     
+                     
+                    </div>
+                 </div>
+                
+            </div>
+            <div *ngIf="level===8">
+          
+                <div class="text-block">
+                    <p>The resourceful caped crusader gets himself in to find Dr Freeze meddling with his tech.<br/>He slips in closer and after a short confrontation, knocks a barely-armed Dr Freeze out with a well placed shot.</p>
+                    
+                    
+                            
+                     <div class="row">
+                      <div class="column">
+                        <img src="../assets/img/story/Level 08-Img 01.jpg" alt="Snow" style="width:75%">
+                      </div>
+                      
+                      <div class="column">
+                        <img src="../assets/img/story/Level 08-Img 02.jpg" alt="Forest" style="width:72%">
+                      </div>
+                      </div>
+                      <div class= "container"align="bottom">
+                           
+                       <p>Batman gets hold of what Freeze has been building.<br/>With little time till the villain regains conscience, our hero gets straight to work</p>     
+                           
+                          </div>
+                       </div>
+            </div>
+            <div *ngIf="level===9">
+          
+                <div class="text-block">
+          
+                 
+                    <div class="row">
+                     <div class="column">
+                       <img src="../assets/img/story/Level 09.jpg" alt="Snow" style="width:60%">
+                     </div>
+                     
+                     
+                     </div>
+                     <div class= "container"align="bottom">
+                          
+                      <p>On arriving at his associate’s residence, Batman is presented with a device. <br/>Knowing is associate quite well, he knew he had to login to locate her
+                   
+                   <br/>After a successful attempt Batman locates Oracle. <br/>He shows her the image and she takes only seconds to figure out what she has to do.</p>
+                       
+                          
+                         </div>
+                      </div>
+            </div>
+
+            <div *ngIf="level===10">
+
+                <div class="text-block">
+          
+                 
+                    <div class="row">
+                     <div class="column">
+                       <img src="../assets/img/story/Level 10.jpg" alt="Snow" style="width:50%;">
+                     </div>
+                     
+                     
+                     </div>
+                     <div class= "container"align="bottom">
+                          
+                      <p>Barbara Gordon manages to decipher the image. Batman soon realizes the next villain he must confront and where to find him</p>
+                          
+                         </div>
+                      </div>
+                     
+            </div>
+            <div *ngIf="level===11">
+          
+                <div class="text-block">
+                    <p>Oracle acts on the clues discovered and intel she has already gathered;<br/>which prompts them to a login page which looks to be associated with<br/>one of Al Ghul’s shell companies which seems to be active in the Gotham area.</p>
+                    
+                    
+                            
+                     <div class="row">
+                      <div class="column">
+                        <img src="../assets/img/story/Level 11-Img 01.jpg" alt="Snow" style="width:80%">
+                      </div>
+                      
+                      <div class="column">
+                        <img src="../assets/img/story/Level 11-Img 02.jpg" alt="Forest" style="width:75%">
+                      </div>
+                      </div>
+                      <div class= "container"align="bottom">
+                           
+                       <p>Although they have discovered the site, gaining access is a challenge worthy of Oracle and the Batman</p>     
+                           
+                          </div>
+                       </div>
+                      
+            </div>
+            <div *ngIf="level===12">
+          
+              
+          <div class="text-block">
+          
+              <p>Batman sneaks in and approaches a Central Operations unit.<br/>He hopes his endeavors will disrupt communication lines between the Ops Center and Operatives.</p>
+              
+              
+                      
+               <div class="row">
+                <div class="column">
+                  <img src="../assets/img/story/Level 12.jpg" alt="Snow" style="width:50%">
+                </div>
+                
+                
+                </div>
+                <div class= "container"align="bottom">
+                     
+                 <p>On succession, Batman destroys the warehouse,<br/>assured that many more operatives and operations centers would stop functioning without it.</p>
+              
+                 
+                     
+                    </div>
+                 </div>
+                
+            </div>
+            <div *ngIf="level===13">
+
+                <div class="text-block">
+                    <p>When Batman sabotaged the warehouse, he realized a few men were guns for hire of the court of owls.<br/>The caped crusader decides to investigate...<br/>He reaches a known hideout which looks much well-guarded than before.</p>
+                    
+                    
+                            
+                     <div class="row">
+                      <div class="column">
+                        <img src="../assets/img/story/Level 13-Img 01.jpg" alt="Snow" style="width:70%">
+                      </div>
+                      
+                      <div class="column">
+                        <img src="../assets/img/story/Level 13-Img 02.jpg" alt="Forest" style="width:75%">
+                      </div>
+                      </div>
+                      <div class= "container"align="bottom">
+                           
+                       <p>Sneaking in through the roof, Batman find a room at the center of the building which appears to be secured by a lock.<br/>His task now was to unlock it...</p>     
+                           
+                          </div>
+                       </div>
+            </div>
+            <div *ngIf="level===14">
+          
+                <div class="text-block">
+          
+                    <p> GCPD radio comms suggested Harley Quinn was around Arkham Asylum. <br/>Batman reaches the fortified prison to find Harley Quinn expecting her nemesis. A enthralling fight ensues:</p>
+                    
+                    
+                            
+                     <div class="row">
+                      <div class="column">
+                        <img src="../assets/img/story/Level 14.png" alt="Snow" style="width:50%">
+                      </div>
+                      
+                      
+                      </div>
+                      <div class= "container"align="bottom">
+                           
+                       <p>The caped crusader survives and extracts another image stored in a device in possession of Quinn.<br/> This provides a direct clue to his next opponent (Yes! You probably guessed it right).</p>
+                    
+                       
+                           
+                          </div>
+                       </div>
+            </div>
+            <div *ngIf="level===15">
+          
+                <div class="text-block">
+          
+                    <p>  The caped crusader enters the Academy building to only realize that all is not what it seems to be. A truly magnanimous challenge lies ahead:</p>
+                    
+                            
+                     <div class="row">
+                      <div class="column">
+                        <img src="../assets/img/story/Level 15.jpeg" alt="Snow" style="width:50%">
+                      </div>
+                      
+                      
+                      </div>
+                      <div class= "container"align="bottom">
+                           
+                    
+                       
+                           
+                          </div>
+                       </div>
+            </div>
+
+
+    
+  </div>
+
+<!-- Level Implementations -->
+
+<div class ="gamespace">
+  <div class="storyboard"><p>{{this.storyWriter(level)}}</p></div>
+<div *ngIf="level===1" class="button-group">
+  <button (click)="downloadFile('Assets/level1/cipher.txt','cipher')" class="red button">cipher</button>
+  <button (click)="downloadFile('Assets/level1/key.txt','key')" class="red button">key</button>
+  <button (click)="downloadFile('Assets/level1/table.txt','table')" class="red button">table</button>
+</div>
+
+<div *ngIf="level===2"  class="button-group">
+  <button (click)="downloadFile('Assets/level2/cipher.txt','cipher')" class="red button">cipher</button>
+  <button (click)="downloadFile('Assets/level2/hint.txt','hint')" class="red button">hint</button>
+</div>
+
+<div *ngIf="level===3"  class="button-group"> 
+  <button (click)="downloadFile('Assets/level3/dir1.zip','dir1')" class="red button">dir1</button>
+</div>
+
+<div *ngIf="level===4"  class="button-group">
+    <button (click)="downloadFile('Assets/level4/encoded_directory.txt','encoded_directory')" class="red button">Encoded Directory</button>
+    <button (click)="downloadFile('Assets/level4/hint.txt','hint')" class="red button">hint</button>
+  </div>
+
+<div *ngIf="level===5"  class="button-group"> 
+  <button (click)="downloadFile('Assets/level5/Untitled1.exe','binary.exe')" class="red button">binary</button>
+</div>
+
+<div *ngIf="level===6"  class="button-group"> 
+    <button (click)="downloadFile('Assets/level6/helloworld.asm','helloworld.asm')" class="red button">helloworld code</button>
+  <div>
+    <form #f="ngForm" (ngSubmit)="onXSS(f)" novalidate class="form">
+      <div class="form-group">
+        <input name="first" ngModel required #first="ngModel" placeholder="answer" class="flag">
+        <button class="blue button"> Check </button>
+      </div>
+    </form></div>
+</div>
+
+<div *ngIf="level===7"  class="button-group"> 
+    <button (click)="downloadFile('Assets/level7/randjava.java','randjava')" class="red button">randjava</button>
+</div>
+
+<div *ngIf="level===8"  class="button-group"> 
+    <button (click)="downloadFile('Assets/level8/python.py','python')" class="red button">python</button>
+    <button (click)="downloadFile('Assets/level8/codex.txt','codex')" class="red button">codex</button>
+</div>
+
+<div *ngIf="level===9"  class="button-group"> 
+    <form #f="ngForm" (ngSubmit)="onLogin(f)" novalidate class="form">
+        <div class="form-group">
+          <table>
+            <tr>
+              <td>User Email</td>
+              <td><input name="email" ngModel required #first="ngModel" placeholder="email" class="flag"></td>
+            </tr>
+            <tr>
+              <td>Password</td>
+              <td><input  type="password" name="password" ngModel required #first="ngModel" placeholder="password" class="flag"></td>
+            </tr>
+            <tr>
+              <td colspan="2"><button class="blue button"> Login </button></td>
+            </tr>             
+        </table>
+        <input type="hidden" value= "The password is 0R4CL3/B4TG1RL">
+        </div>
+      </form>
+  </div>
+
+  <div *ngIf="level===10"  class="button-group"> 
+    <button (click)="downloadFile('Assets/level10/level10/hideimage.jpeg','hideimage')" class="red button">Long live the bat</button>
+  </div>
+  <div *ngIf="level===11" class="button-abc">
+    <a href="https://leagueofassasins.000webhostapp.com/">methanin ganin</a>
+  </div>
+  <div *ngIf="level===13"  class="button-group"> 
+    <button (click)="downloadFile('Assets/level13/already_picked_lock.txt','already_picked_lock')" class="red button">Already Picked Lock</button>
+    <button (click)="downloadFile('Assets/level13/lock.txt','lock')" class="red button">Lock</button>
+  </div>
+
+  <div *ngIf="level===14"  class="button-group"> 
+    <img src="../assets/img/test1.png" width="600px">
+  </div>
+
+
+  <div *ngIf="level===15"  class="button-group"> 
+      <button (click)="downloadFile('Assets/level15/BarCode.7z','Zipped.7z')" class="red button">Zipped</button>
+      <button (click)="downloadFile('Assets/level15/AcidFlower.exe','AcidFlower.exe')" class="red button">Joker-in-the-Box</button>
+    </div>
+
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate class="form">
+    <div class="form-group">
+      <input name="first" ngModel required #first="ngModel" placeholder="flag" class="flag">
+      <button class="blue button"> Submit </button>
+    </div>
+  </form>
+</div>
+
+</div>
+

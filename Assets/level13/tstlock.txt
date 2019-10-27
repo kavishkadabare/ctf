@@ -1,0 +1,1 @@
+KRXZY_CTF{This_1s_NOT_Th3_Flag}
