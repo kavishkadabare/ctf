@@ -2,8 +2,8 @@ import { Player } from './player';
 
 export const HEROES: Player[] = [
   { id: 11, name: 'Batman', level: 15 },
-  { id: 12, name: 'NightWing', level: 1 },
-  { id: 13, name: 'RedHood', level: 1 },
+  { id: 12, name: 'NightWing', level: 10 },
+  { id: 13, name: 'RedHood', level: 8 },
   { id: 14, name: 'Robin', level: 1 },
   { id: 15, name: 'Red Robin', level: 6 },
   { id: 16, name: 'Batgirl', level: 1 },
